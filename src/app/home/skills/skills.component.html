@@ -1,0 +1,30 @@
+<div class="skills flex flex-wrap justify-center  justify-center bg-gray-900 relative py-20 ">
+    <div class=" flex-auto lg:flex-1 text-gray-700 text-center px-4 lg:x-10 xl:px-20 py-10 lg:py-20 m-2">       
+        <p class="pskill space-mono font-bold text-2xl lg:text-4xl text-white pb-12 lg:pb-16">Developer's<br>Skills & Tools:</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+            <div *ngFor="let skill of skills" class="px-4 pb-12 lg:pb-16">
+                <h3 class="space-mono text-base lg:text-2xl text-white pb-6">{{skill}}</h3>
+                <span>
+                    <i class="faDev fa fa-star text-base lg:text-2xl opacity0" aria-hidden="true"></i>
+                    <i class="faDev fa fa-star text-base lg:text-2xl opacity0" aria-hidden="true"></i>
+                    <i class="faDev fa fa-star text-base lg:text-2xl opacity0" aria-hidden="true"></i>
+                    <i class="faDev fa fa-star text-base lg:text-2xl opacity0" aria-hidden="true"></i>
+                    <i [ngClass]=" skill === 'React' ||  skill === 'Nodejs' ||  skill === 'Git' ||  skill === 'Php' ? 'fa-star-o' :  'fa-star' " class="faDev fa  text-base lg:text-2xl opacity0" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>        
+    </div>
+    <div class=" flex-auto lg:flex-1 text-gray-700 text-center px-4 lg:x-10 xl:px-20 py-10 lg:py-20 m-2">
+        <p class="space-mono font-bold text-2xl lg:text-2xl lg:text-4xl text-white pb-12 lg:pb-16">Designer's<br>Tools:</p>     
+        <div *ngFor="let skill of skillsdesigner" class="px-4 pb-12 lg:pb-16">
+            <h3 class="space-mono text-base lg:text-2xl text-white pb-6">{{skill}}</h3>
+            <span>
+                <i class="faDes fa fa-star text-base lg:text-2xl opacity0" aria-hidden="true"></i>
+                <i class="faDes fa fa-star text-base lg:text-2xl opacity0" aria-hidden="true"></i>
+                <i class="faDes fa fa-star text-base lg:text-2xl opacity0" aria-hidden="true"></i>
+                <i class="faDes fa fa-star text-base lg:text-2xl opacity0" aria-hidden="true"></i>
+                <i [ngClass]=" skill === 'Figma'  ? 'fa-star-o' : 'fa-star' " class="faDev fa  text-base lg:text-2xl opacity0" aria-hidden="true"></i>
+            </span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,189 @@
+<div class="experience relative py-20 px-4 xl:pl-10 xl:pl-32 bg-teal-900">
+    
+    <div class="jobs">
+        <h1 class="rubki text-2xl text-white text-right pr-32">JOBS</h1>
+    </div>
+
+    <div class="flex flex-row">
+
+        <div #years class="text-gray-700 text-center m-2 py-40 px-10 hidden lg:block">
+            <p (click)="showJobs(1)" class="space-mono text-base text-white pb-20 cursor-pointer years opacity0">  <span [ngClass]="{'underline': job === 1}" > 2019-2020 </span></p>
+            <p (click)="showJobs(2)" class="space-mono text-base text-white pb-20 cursor-pointer years opacity0">  <span [ngClass]="{'underline': job === 2}" > 2018-2019 </span></p>
+            <p (click)="showJobs(3)" class="space-mono text-base text-white pb-20 cursor-pointer years opacity0">  <span [ngClass]="{'underline': job === 3}"> 2016-2018 </span></p>
+            <p (click)="showJobs(4)" class="space-mono text-base text-white pb-20 cursor-pointer years opacity0">  <span [ngClass]="{'underline': job === 4}"> 2014-2016 </span></p>
+        </div>
+        
+        <div class="text-white text-4xl text-center  w-4/6 block overflow-hidden h-60 relative hidden lg:block">
+
+            <div #panelcard class="panel-card absolute opacity0">
+
+                <div  (click)="showJobs(1)" class="card py-16">
+            
+                    <h4 [ngClass]="{'text-6xl': job === 1 , 'text-4xl text-opacity-50' : job !== 1}" class="space-mono tracking-widest">Freelancer</h4>
+
+                    <p [ngClass]="{'text-4xl': job === 1 , 'text-2xl text-opacity-50' : job !== 1}" class="space-mono text-4xl text-white"> - Clientes - </p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 1}"  class="space-mono text-base text-white">
+                        <br>
+                        QuesadillaLab                        
+                        <br>
+                        <a href="https://conjuntoestadioazteca.com.mx/" target="_blank">
+                            https://conjuntoestadioazteca.com.mx/
+                        </a>
+                        <br>
+                        <br>
+                        Agencia Oveja Negra
+                        <br>
+                        <a href="https://agenciaovejanegra.com/" target="_blank">
+                            https://agenciaovejanegra.com/
+                        </a>
+                        <br>
+                        <br>
+                        The Music Joint Group
+                        <br>
+                        <br>
+                        Lead 2 Action
+                        <br>
+                        2 sitios promocionales
+                    </p>
+
+                </div>
+
+                <div  (click)="showJobs(2)" class="card py-16">
+
+                    <h4 [ngClass]="{'text-6xl': job === 2 , 'text-4xl text-opacity-50' : job !== 2}" class="space-mono text-2xl text-white leading-none">Project Manager</h4>
+
+                    <p [ngClass]="{'text-4xl': job === 2 , 'text-2xl text-opacity-50' : job !== 2}"  class="space-mono text-4xl text-white"> - Nurun - </p>
+                    
+                    <p [ngClass]="{'text-opacity-50' : job !== 2}" class="space-mono text-base text-white text-opacity-50">Gestionar promociones </p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 2}" class="space-mono text-base text-white text-opacity-50">Gestionar trabajos de mantenimiento a sitios web, (32 sitios) </p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 2}" class="space-mono text-base text-white text-opacity-50">Elaboración de plan de trabajo </p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 2}" class="space-mono text-base text-white text-opacity-50">Seguimiento de proyectos</p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 2}" class="space-mono text-base text-white text-opacity-50">Identificación de riesgos</p>
+
+
+                </div>
+
+
+                <div   (click)="showJobs(3)" class="card py-16">
+
+                    <h4 [ngClass]="{'text-6xl': job === 3 , 'text-4xl text-opacity-50' : job !== 3}" class="space-mono text-2xl text-white leading-none">Developer <br> Front-End Sr.</h4>
+
+                    <p [ngClass]="{'text-4xl': job === 3 , 'text-3xl text-opacity-50' : job !== 3}"  class="space-mono text-4xl text-white"> - Nurun - </p>
+                    
+                    <p [ngClass]="{'text-opacity-50' : job !== 3}" class="space-mono text-2xl text-white text-opacity-50 py-2">Sitios web:</p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 3}" class="space-mono text-base text-white text-opacity-50">
+                        Lactacyd México
+                        <br>
+                        <a href="https://www.lactacyd.mx/" target="_blank"> https://www.lactacyd.mx/ </a>
+                    </p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 3}" class="space-mono text-base text-white text-opacity-50">Hotnuts México</p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 3}" class="space-mono text-base text-white text-opacity-50">Pharmaton México</p>
+
+                    <p [ngClass]="{'text-opacity-50' : job !== 3}" class="space-mono text-2xl text-white text-opacity-50 py-2">Sitios promocionales:</p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 3}" class="space-mono text-base text-white text-opacity-50">La papa de la fortuna - Sabritas</p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 3}" class="space-mono text-base text-white text-opacity-50">Lanavidat - Sabritas</p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 3}" class="space-mono text-base text-white text-opacity-50">Doritos Gaming  - Doritos</p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 3}" class="space-mono text-base text-white text-opacity-50">Drive and Pleasure  - BMW</p>
+
+
+                </div>
+
+                <div  (click)="showJobs(4)" class="card py-16">
+
+                    <h4 [ngClass]="{'text-6xl': job === 4 , 'text-4xl text-opacity-50' : job !== 4}" class="space-mono text-2xl text-white leading-none">Lider Unidad <br> de Informática</h4>
+                    <p [ngClass]="{'text-4xl': job === 4 , 'text-3xl text-opacity-50' : job !== 4}"  class="space-mono text-4xl text-white"> -  I.P.N. D.P.S. - </p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 4}" class="space-mono text-base text-white text-opacity-50 xl:w-8/12 m-auto">Sistematización de procesos laborales en nuevas aplicaciones incorporadas a la oficina virtual.</p>
+                    <p [ngClass]="{'text-opacity-50' : job !== 4}" class="space-mono text-base text-white text-opacity-50">Diseño, Desarrollo y Mantenimiento del sitio web</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="d-block md:hidden">
+
+
+        <p class="space-mono font-bold text-base text-white pt-20 cursor-pointer years opacity0"> <span> 2019-2020 </span></p>
+        <h4  class="space-mono text-white text-3xl py-4">Freelancer</h4>
+        <p  class="space-mono text-2xl text-white py-4"> - Clientes - </p>
+        <p  class="space-mono text-base text-white">
+            Agencia Oveja Negra
+            <br>
+            <a href="https://agenciaovejanegra.com/" target="_blank">
+                https://agenciaovejanegra.com/
+            </a>
+            <br>
+            <br>
+            The Music Joint Group
+            <br>
+            <br>
+            Lead 2 Action
+            <br>
+            2 sitios promocionales
+        </p>
+
+        
+
+        <p class="space-mono font-bold text-base text-white pt-20 cursor-pointer years opacity0"> <span> 2018-2019 </span></p>
+        <h4  class="space-mono text-white text-3xl py-4">Project Manager</h4>
+        <p  class="space-mono text-2xl text-white py-4"> - Nurun - </p>
+        <p  class="space-mono text-base text-white">
+            Gestionar promociones
+            <br>
+            Gestionar trabajos de mantenimiento a sitios web, (32 sitios)
+            <br>
+            Elaboración de plan de trabajo 
+            <br>
+            Seguimiento de proyectos
+            <br>
+            Identificación de riesgos
+        </p>
+
+
+        <p class="space-mono font-bold text-base text-white pt-20 cursor-pointer years opacity0"> <span> 2016-2018 </span></p>
+        <h4  class="space-mono text-white text-3xl py-4">Developer <br>Front-End Sr.</h4>
+        <p  class="space-mono text-2xl text-white py-4"> - Nurun - </p>
+        <p  class="space-mono text-base text-white">
+            <br>
+            Sitios web:
+            <br>
+            Lactacyd México
+            <br>
+            https://www.lactacyd.mx/
+            <br>
+            Hotnuts México
+            <br>
+            Pharmaton México
+            <br>
+            <br>
+            Sitios promocionales:
+            <br>
+            La papa de la fortuna - Sabritas
+            <br>
+            Lanavidat - Sabritas
+            <br>
+            Doritos Gaming - Doritos
+            <br>
+            Drive and Pleasure - BMW
+        </p>
+
+
+
+        <p class="space-mono font-bold text-base text-white pt-20 cursor-pointer years opacity0"> <span> 2014-2016 </span></p>
+        <h4  class="space-mono text-white text-3xl py-4">Lider Unidad de Informática</h4>
+        <p  class="space-mono text-2xl text-white py-4"> - I.P.N. D.P.S. - </p>
+        <p  class="space-mono text-base text-white">
+            Sistematización de procesos laborales en nuevas aplicaciones incorporadas a la oficina virtual.
+            <br>
+            Diseño, Desarrollo y Mantenimiento del sitio web
+        </p>
+
+
+
+
+
+    </div>
+
+</div>
